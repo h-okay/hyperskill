@@ -13,7 +13,6 @@ public class Program {
                 { ' ', ' ', ' ' }
         };
         Board board = new Board(initialBoard);
-        board.draw();
         ui.play(board);
 
     }
