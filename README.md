@@ -1,1 +1,4 @@
-Tictactoe project in Java for [Hyperskill Project 48](https://hyperskill.org/projects/48)
+Projects of Java Core path at [Hyperskill](https://hyperskill.org/study-plan)
+
+Whats included:
+- [Tic-Tac-Toe](https://hyperskill.org/projects/48) 
