@@ -8,9 +8,9 @@ public class Program {
 
         UserInterface ui = new UserInterface(new Scanner(System.in));
         char[][] initialBoard = {
-                { ' ', ' ', ' ' },
-                { ' ', ' ', ' ' },
-                { ' ', ' ', ' ' }
+                {' ', ' ', ' '},
+                {' ', ' ', ' '},
+                {' ', ' ', ' '}
         };
         Board board = new Board(initialBoard);
         ui.play(board);

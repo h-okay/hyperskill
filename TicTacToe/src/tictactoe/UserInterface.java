@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class UserInterface {
 
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner;
     private char turn;
 
     public UserInterface(Scanner scanner) {
@@ -20,7 +20,7 @@ public class UserInterface {
         this.turn = 'X';
     }
 
-    public Board play(Board board) {
+    public void play(Board board) {
 
         int[] coords = new int[2];
 
@@ -31,8 +31,8 @@ public class UserInterface {
 
             try {
 
-                coords[0] = Integer.valueOf(input.split(" ")[0]) - 1;
-                coords[1] = Integer.valueOf(input.split(" ")[1]) - 1;
+                coords[0] = Integer.parseInt(input.split(" ")[0]) - 1;
+                coords[1] = Integer.parseInt(input.split(" ")[1]) - 1;
 
                 if (!board.isAvailable(coords)) {
                     System.out.println("This cell is occupied! Choose another one!");
@@ -58,8 +58,6 @@ public class UserInterface {
                 System.out.println("Coordinates should be from 1 to 3!");
             }
         }
-
-        return board;
     }
 
 }
